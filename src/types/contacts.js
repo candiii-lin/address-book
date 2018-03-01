@@ -1,0 +1,2 @@
+export const ON_LOAD_ACTION = 'ON_LOAD_ACTION';
+export const CONTACT_SELECTED = 'CONTACT_SELECTED';

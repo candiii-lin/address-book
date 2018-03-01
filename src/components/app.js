@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import ContactsComponent from './contact';
+import {connect} from 'react-redux';
+import { Route } from 'react-router-dom';
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
-      <div>React simple starter</div>
+      <Route path="/" component={ContactsComponent} />
     );
   }
 }
+
+export default connect(state => state)(App);
